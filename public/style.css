@@ -1,0 +1,329 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* CSS RESET ENDS */
+
+/* Global */
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f3f3f3;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'PT Sans', sans-serif;
+}
+
+/* Header */
+
+header {
+  background-color:white;
+}
+
+.header-container {
+  height: 4rem;
+  display: flex;
+  padding: 1rem 0 0 0 1rem;
+  max-width: 80%;
+  margin: 0 auto;
+  align-items:center;
+  background-color:white;
+  margin-bottom: 1rem;
+}
+
+.logo img{
+  height:40px;
+  width:55px;
+}
+
+.search-bar input {
+  width: 20rem;
+  font-size: .8rem;
+  padding:.5rem;
+}
+
+.search {
+  padding-left: .5rem;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: #7f7f7f;
+  padding-left:1.5rem;
+  font-size: 1rem;
+}
+
+.nav-bar{
+  margin-left: .5rem;
+}
+
+.header-buttons {
+/* margin-left: 3rem; */
+width:30%;
+display:flex;
+justify-content: end;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.login-button {
+  color: #424242;
+  background-color: white;
+  border: none;
+  padding:.3rem;
+  margin-left:.2rem;
+  border: solid .5px #ada9a9;
+  border-radius:5px;
+  font-size: .8rem;
+}
+
+.signup-button {
+  color:white;
+  background-color: #cc4d29;
+  border: none;
+  padding:.3rem;
+  margin-left:.5rem;
+  border-radius:5px;
+  font-size: .8rem;
+}
+
+/* =========Hero Section======= */
+.hero-container{
+  display:grid;
+  grid-template-columns: 3fr 1fr;
+  max-width: 80%;
+  margin:0 auto;
+}
+/* Main Card */
+
+.main-card-container {
+  /* max-width: 50%; */
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  /* display:flex;
+  justify-content: space-between; */
+  background-color:white;
+  margin:0rem 1rem 0rem 0rem;
+  box-shadow: 2px 5px 5px 2px lightgray;
+  padding:0.5rem;
+  align-items:center;
+}
+
+.products-header {
+  font-weight: bold;
+  color:black;
+  margin-bottom: 1rem;
+  font-size:1.1rem;
+}
+
+.card-image-container img {
+  padding-right:.8rem;
+}
+
+.content-container {
+  text-align: left;
+}
+
+.product-title {
+  font-weight:bold;
+  padding-bottom:.5rem;
+}
+
+.product-description {
+  padding-bottom:.5rem;
+  color:#7a7a7a;
+
+}
+
+.comment-tag {
+  display:flex;
+  align-items:center;
+  padding-right:.5rem;
+}
+
+.comment-link {
+  font-size: .8rem;
+}
+
+.fa-comment {
+  color:#7a7a7a;
+}
+
+.tag {
+  padding-left: .5rem;
+  font-size:.8rem;
+  color:#7a7a7a;
+
+}
+
+.upvote {
+  display:flex;
+  flex-direction: column;
+  height: 60px;
+}
+
+/* Upcoming Prods Card */
+.upcoming-products-container{
+  background-color:white;
+  display: flex;
+  box-shadow: 2px 5px 5px 2px lightgray;
+}
+
+.upcoming-prods-header {
+  font-weight: bold;
+  color:black;
+  margin-bottom: 1rem;
+  font-size:1.1rem;
+}
+
+.upcoming-prods-header span {
+  color: #949494;
+  font-size:.7rem;
+
+}
+
+.upcoming-prods-title {
+  font-size: 1rem;
+  font-weight:bold;
+  padding:.5rem;
+}
+
+.upcoming-prods-description {
+  color: #949494;
+  padding:.5rem;
+}
+
+.upcoming-prods-follow{
+  font-size: .7rem;
+  padding:.5rem;
+  color: #979696;
+}
+
+.upcoming-prods-follow:hover {
+  cursor: pointer;
+  color:#cc4d29;
+}
+
+.upcoming-prods-image {
+  margin:.5rem;
+
+}
+
+.view {
+  width:100%;
+  box-shadow: 2px 5px 5px 2px lightgray;
+  padding:1rem;
+  outline: none;
+  border: none;
+  color:#cc4d29;
+}
+
+.view:hover {
+  background-color:#cac7c7;
+  cursor: pointer;
+}
+
+/* Hiring Now Cards */
+.hiring-now-container{
+  background-color:white;
+  display: flex;
+  justify-content:space-between;
+  box-shadow: 2px 5px 5px 2px lightgray;
+}
+
+.hiring-now-header {
+  font-weight: bold;
+  color:black;
+  margin: 1rem 0 1rem 0;
+  font-size:1.1rem;
+}
+
+.hiring-now-name {
+  font-size: 1rem;
+  font-weight:bold;
+  padding:.5rem 0 0 .5rem;
+}
+
+.hiring-now-role {
+  color: #949494;
+  padding:.3rem 0 0 .5rem;
+}
+
+.hiring-now-location{
+  font-size: .7rem;
+  padding:.3rem 0 0.5rem .5rem;
+  color: #979696;
+}
+
+.hiring-now-image {
+  margin:.5rem;
+
+}
+
+.hiring-para {
+  color: #979696;
+  background-color:white;
+  box-shadow: 2px 5px 5px 2px lightgray;
+
+}
+
+.hiring-para span{
+  color: #cc4d29;
+  
+
+}
+/* =========Hero Section Ends======= */
+
+/* footer */
+
+footer {
+  text-align: center;
+}
